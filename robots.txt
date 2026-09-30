@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
+
+Sitemap: https://guidera.live/sitemap.xml
