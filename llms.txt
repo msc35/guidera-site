@@ -1,0 +1,31 @@
+# Guidera
+
+> Guidera is an iPhone AI tour guide that tells source-checked stories about any place on the map, in 9 languages.
+
+Guidera is made by Mehmet Selim Çetin, a solo developer in Munich. Facts on this site are kept accurate; if anything here conflicts with a page, the page is the source.
+
+## Key facts
+- Before narrating, Guidera researches the place from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites. A verifier removes anything the sources don't support. For little-known places the guide says less rather than making things up.
+- Works on any place Apple Maps knows, worldwide, not just famous landmarks.
+- 3 guides (Arthur the Historian, Max the Local Insider, Luna the Artist), 4 tones (Informative, Playful, Dark Humor, Calm), 3 lengths (Short, Medium, Long).
+- 9 languages for app and stories: English, German, Spanish, French, Italian, Japanese, Portuguese (Brazil), Turkish, Simplified Chinese.
+- 39 curated walking tours in 35 cities, plus AI-planned custom tours built only from real places (Premium). Walkman mode narrates tour stops as you walk (Premium). Tours can be resumed.
+- Apple Watch companion; Lock Screen and Dynamic Island Live Activity (Premium). Follow-up questions (Premium).
+- Pricing: free to download. Free tier: 5 AI stories per day (up to 20 with short ads), text stories, Arthur, Informative and Playful tones, banner ads. Premium passes (not a subscription): €1 for 3 days, €3 for a week, €7 for a month. Passes stack.
+- Not available offline: new stories need a connection.
+- Privacy: only the tapped place's coordinates are sent, never the user's location. No user accounts.
+- Platform: iPhone, iOS 18.5 or later, plus Apple Watch. No Android.
+- App Store: https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171
+
+## Pages
+- [Home](https://guidera.live/): overview and a real story traced to its sources
+- [Features and pricing](https://guidera.live/features.html)
+- [How it works](https://guidera.live/how-it-works.html)
+- [Cities with curated tours](https://guidera.live/cities.html)
+- [FAQ](https://guidera.live/faq.html)
+- [About the developer](https://guidera.live/about.html)
+
+## Blog
+- [Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)](https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html): An 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.
+- [How We Stop an AI Tour Guide From Making Up History](https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html): Research, claims with sources, narration, verification: how Guidera avoids invented history.
+- [Audio Tour Apps Compared: Which One Fits Your Trip? (2026)](https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html): Six audio tour apps compared by platform, pricing, offline use, languages and honest limits.

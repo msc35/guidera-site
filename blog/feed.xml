@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Guidera blog</title>
+  <link>https://guidera.live/blog/</link>
+  <atom:link href="https://guidera.live/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Walking routes, travel apps and how Guidera checks its stories.</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 01 Oct 2026 09:00:00 +0200</lastBuildDate>
+  <item>
+    <title>Audio Tour Apps Compared: Which One Fits Your Trip? (2026)</title>
+    <link>https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html</link>
+    <guid isPermaLink="true">https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html</guid>
+    <pubDate>Thu, 01 Oct 2026 09:00:00 +0200</pubDate>
+    <dc:creator>Mehmet Selim Çetin</dc:creator>
+    <description>VoiceMap, Rick Steves Audio Europe, GPSmyCity, SmartGuide, GuideAlong and Guidera compared: platforms, pricing, offline use and who each app suits.</description>
+  </item>
+  <item>
+    <title>How We Stop an AI Tour Guide From Making Up History</title>
+    <link>https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html</link>
+    <guid isPermaLink="true">https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html</guid>
+    <pubDate>Thu, 01 Oct 2026 09:00:00 +0200</pubDate>
+    <dc:creator>Mehmet Selim Çetin</dc:creator>
+    <description>Guidera researches each place in Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and city sites, and a verifier removes what the sources do not support.</description>
+  </item>
+  <item>
+    <title>Free Self-Guided Walking Tour of Munich&#x27;s Old Town (Map, 11 Stops &amp; Tips)</title>
+    <link>https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html</link>
+    <guid isPermaLink="true">https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html</guid>
+    <pubDate>Thu, 01 Oct 2026 09:00:00 +0200</pubDate>
+    <dc:creator>Mehmet Selim Çetin</dc:creator>
+    <description>A free 3.5 km walk through Munich&#x27;s Altstadt: 11 stops from Marienplatz to the Asamkirche, about 45 minutes of walking, with a route map and sources.</description>
+  </item>
+</channel>
+</rss>

@@ -4,27 +4,107 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="theme-color" content="#0F4C3A"/>
-<title>How Guidera Works · AI Tour Guide for iPhone</title>
-<meta name="description" content="Tap any place on the map. Guidera researches it from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites, verifies the story, then tells it."/>
+<title>Guidera Blog: Walking Tours, Travel Apps &amp; AI Accuracy</title>
+<meta name="description" content="Self-guided walking routes, audio tour app comparisons and how Guidera checks its AI stories against sources. By Mehmet Selim Çetin in Munich."/>
 <meta name="author" content="Mehmet Selim Çetin"/>
-<link rel="canonical" href="https://guidera.live/how-it-works.html"/>
+<link rel="canonical" href="https://guidera.live/blog/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Guidera"/>
-<meta property="og:url" content="https://guidera.live/how-it-works.html"/>
-<meta property="og:title" content="How Guidera Works · AI Tour Guide for iPhone"/>
-<meta property="og:description" content="Tap any place on the map. Guidera researches it from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites, verifies the story, then tells it."/>
-<meta property="og:image" content="https://guidera.live/assets/No-bg_50percent.png"/>
+<meta property="og:url" content="https://guidera.live/blog/"/>
+<meta property="og:title" content="Guidera Blog: Walking Tours, Travel Apps &amp; AI Accuracy"/>
+<meta property="og:description" content="Self-guided walking routes, audio tour app comparisons and how Guidera checks its AI stories against sources. By Mehmet Selim Çetin in Munich."/>
+<meta property="og:image" content="https://guidera.live/assets/og/blog.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="How Guidera Works · AI Tour Guide for iPhone"/>
-<meta name="twitter:description" content="Tap any place on the map. Guidera researches it from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites, verifies the story, then tells it."/>
-<meta name="twitter:image" content="https://guidera.live/assets/No-bg_50percent.png"/>
+<meta name="twitter:title" content="Guidera Blog: Walking Tours, Travel Apps &amp; AI Accuracy"/>
+<meta name="twitter:description" content="Self-guided walking routes, audio tour app comparisons and how Guidera checks its AI stories against sources. By Mehmet Selim Çetin in Munich."/>
+<meta name="twitter:image" content="https://guidera.live/assets/og/blog.png"/>
 <link rel="icon" href="/assets/No-bg_50percent.png" type="image/png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"/>
 <link rel="stylesheet" href="/styles.css"/>
 <link rel="alternate" type="application/rss+xml" title="Guidera blog" href="https://guidera.live/blog/feed.xml"/>
-
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Blog",
+   "@id": "https://guidera.live/blog/#blog",
+   "name": "Guidera blog",
+   "url": "https://guidera.live/blog/",
+   "description": "Walking routes, travel apps and how Guidera checks its stories.",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://guidera.live/about.html#selim"
+   },
+   "publisher": {
+    "@id": "https://guidera.live/#org"
+   },
+   "blogPost": [
+    {
+     "@id": "https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html#post"
+    },
+    {
+     "@id": "https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html#post"
+    },
+    {
+     "@id": "https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html#post"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "url": "https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html",
+     "name": "Audio Tour Apps Compared: Which One Fits Your Trip? (2026)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "url": "https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html",
+     "name": "How We Stop an AI Tour Guide From Making Up History"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "url": "https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html",
+     "name": "Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://guidera.live/about.html#selim",
+   "name": "Mehmet Selim Çetin",
+   "url": "https://guidera.live/about.html",
+   "jobTitle": "Developer of Guidera",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressCountry": "DE"
+   },
+   "sameAs": [
+    "https://msc35.github.io/cv/portfolio",
+    "https://linkedin.com/in/msc3506"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://guidera.live/#org",
+   "name": "Guidera",
+   "url": "https://guidera.live/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://guidera.live/assets/No-bg_50percent.png"
+   }
+  }
+ ]
+}</script>
 </head>
 <body>
 <header class="header">
@@ -72,63 +152,31 @@
 <main>
 <section class="page-hero">
   <div class="container-md">
-    <p class="eyebrow">How it works</p>
-    <h1>Four taps to a <i>great walk.</i></h1>
+    <p class="eyebrow">Blog</p>
+    <h1>Notes from <i>the road.</i></h1>
+    <p>Walking routes, travel apps and how Guidera checks its stories. Written by Mehmet Selim Çetin, the developer of Guidera, in Munich.</p>
   </div>
 </section>
-
-<section class="section" style="max-width:1024px;margin:0 auto">
-  <div class="container">
-    <div class="how-steps"><div class="reveal">
-  <div class="how-step ">
-    <div><p class="num">01</p></div>
-    <div><h2>Open the map</h2><p>Wherever you land, every place Apple Maps knows has a story. No setup, no account, no signup wall.</p></div>
-    <div class="img-wrap"><img src="/assets/explore.jpg" alt="Guidera map view near the Eiffel Tower in Paris" loading="lazy" width="200" height="434"/></div>
-  </div>
-</div>
-<div class="reveal">
-  <div class="how-step reverse">
-    <div><p class="num">02</p></div>
-    <div><h2>Tap a place</h2><p>Pick a building, monument, square, or quiet alley. Guidera checks its sources, then tells the story, in the guide, tone and length you chose.</p></div>
-    <div class="img-wrap"><img src="/assets/place-detail.jpg" alt="Guidera story for Place du Trocadéro in Paris, narrated by Arthur the Historian" loading="lazy" width="200" height="434"/></div>
-  </div>
-</div>
-<div class="reveal">
-  <div class="how-step ">
-    <div><p class="num">03</p></div>
-    <div><h2>Press play. Walk. <span class="premium-tag">Premium</span></h2><p>Start a curated tour, or have Guidera plan a custom one from real places. Turn on Walkman mode, pocket your phone, and each stop is narrated as you walk. Stop anytime and resume where you left off.</p></div>
-    <div class="img-wrap"><img src="/assets/active-tour.jpg" alt="Guidera walking tour through central Paris with Walkman mode" loading="lazy" width="200" height="434"/></div>
-  </div>
-</div>
-<div class="reveal">
-  <div class="how-step reverse">
-    <div><p class="num">04</p></div>
-    <div><h2>Ask follow-ups <span class="premium-tag">Premium</span></h2><p>Curious about the architect, a date, a name on a plaque? Type a question. Get a real, conversational answer.</p></div>
-    <div class="img-wrap"><img src="/assets/place-detail.jpg" alt="Guidera story screen with the Ask Arthur section" loading="lazy" width="200" height="434"/></div>
-  </div>
-</div></div>
-  </div>
-</section>
-
-<section class="section section-sand">
-  <div class="container-md">
-    <div class="reveal section-head">
-      <p class="eyebrow">Before you hear a story</p>
-      <h2 style="margin-top:12px">Research, verify, then tell.</h2>
-      <p>Guidera first researches the place from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites. A verifier then removes anything those sources don't support. For little-known places, the guide says less rather than making things up.</p>
-      <p><a href="/#trust" class="story-link">See a real example →</a></p>
-    </div>
-  </div>
-</section>
-
-<section class="cta-strip section-sand-solid">
-  <div class="container-sm reveal">
-    <h2>That's it.</h2>
-    <p>No accounts to create. No itineraries to plan.</p>
-    <div class="cta-buttons"><a href="https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171" target="_blank" rel="noopener noreferrer" class="btn-app btn-terra ">
-  <svg viewBox="0 0 384 512" width="28" height="28" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" fill="currentColor"/></svg>
-  <span class="btn-stack"><span class="btn-small">Download on the</span><span class="btn-big">App Store</span></span>
-</a></div>
+<section class="section">
+  <div class="post-list">
+<article class="feature-card">
+  <p class="post-meta"><time datetime="2026-10-01">1 October 2026</time> · 8 min read</p>
+  <h2><a href="/blog/best-audio-tour-apps-which-one-for-which-trip.html">Audio Tour Apps Compared: Which One Fits Your Trip? (2026)</a></h2>
+  <p>Six audio tour apps compared by platform, pricing, offline use, languages and honest limits.</p>
+  <p style="margin-top:16px"><a href="/blog/best-audio-tour-apps-which-one-for-which-trip.html" class="story-link" style="font-weight:500">Read the post →</a></p>
+</article>
+<article class="feature-card">
+  <p class="post-meta"><time datetime="2026-10-01">1 October 2026</time> · 6 min read</p>
+  <h2><a href="/blog/how-guidera-keeps-ai-tour-guide-accurate.html">How We Stop an AI Tour Guide From Making Up History</a></h2>
+  <p>Research, claims with sources, narration, verification: how Guidera avoids invented history.</p>
+  <p style="margin-top:16px"><a href="/blog/how-guidera-keeps-ai-tour-guide-accurate.html" class="story-link" style="font-weight:500">Read the post →</a></p>
+</article>
+<article class="feature-card">
+  <p class="post-meta"><time datetime="2026-10-01">1 October 2026</time> · 9 min read</p>
+  <h2><a href="/blog/munich-old-town-self-guided-walking-tour.html">Free Self-Guided Walking Tour of Munich&#x27;s Old Town (Map, 11 Stops &amp; Tips)</a></h2>
+  <p>An 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.</p>
+  <p style="margin-top:16px"><a href="/blog/munich-old-town-self-guided-walking-tour.html" class="story-link" style="font-weight:500">Read the post →</a></p>
+</article>
   </div>
 </section>
 </main>

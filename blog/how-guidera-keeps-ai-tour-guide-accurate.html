@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#0F4C3A"/>
+<title>How We Stop an AI Tour Guide From Making Up History</title>
+<meta name="description" content="Guidera researches each place in Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and city sites, and a verifier removes what the sources do not support."/>
+<meta name="author" content="Mehmet Selim Çetin"/>
+<link rel="canonical" href="https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Guidera"/>
+<meta property="og:url" content="https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html"/>
+<meta property="og:title" content="How We Stop an AI Tour Guide From Making Up History"/>
+<meta property="og:description" content="Guidera researches each place in Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and city sites, and a verifier removes what the sources do not support."/>
+<meta property="og:image" content="https://guidera.live/assets/og/accuracy.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="article:published_time" content="2026-10-01"/>
+<meta property="article:modified_time" content="2026-10-01"/>
+<meta property="article:author" content="https://guidera.live/about.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="How We Stop an AI Tour Guide From Making Up History"/>
+<meta name="twitter:description" content="Guidera researches each place in Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and city sites, and a verifier removes what the sources do not support."/>
+<meta name="twitter:image" content="https://guidera.live/assets/og/accuracy.png"/>
+<link rel="icon" href="/assets/No-bg_50percent.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"/>
+<link rel="stylesheet" href="/styles.css"/>
+<link rel="alternate" type="application/rss+xml" title="Guidera blog" href="https://guidera.live/blog/feed.xml"/>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html#post",
+   "headline": "How We Stop an AI Tour Guide From Making Up History",
+   "description": "Guidera researches each place in Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and city sites, and a verifier removes what the sources do not support.",
+   "image": "https://guidera.live/assets/og/accuracy.png",
+   "datePublished": "2026-10-01",
+   "dateModified": "2026-10-01",
+   "author": {
+    "@id": "https://guidera.live/about.html#selim"
+   },
+   "publisher": {
+    "@id": "https://guidera.live/#org"
+   },
+   "mainEntityOfPage": "https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://guidera.live/blog/#blog"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://guidera.live/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://guidera.live/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How Guidera keeps stories accurate",
+     "item": "https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://guidera.live/about.html#selim",
+   "name": "Mehmet Selim Çetin",
+   "url": "https://guidera.live/about.html",
+   "jobTitle": "Developer of Guidera",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressCountry": "DE"
+   },
+   "sameAs": [
+    "https://msc35.github.io/cv/portfolio",
+    "https://linkedin.com/in/msc3506"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://guidera.live/#org",
+   "name": "Guidera",
+   "url": "https://guidera.live/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://guidera.live/assets/No-bg_50percent.png"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Guidera make things up?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Guidera is built to avoid it: every story is based on researched claims with sources, and a verifier removes anything the sources don't support. Sources themselves can still be wrong or incomplete, so the app asks you to verify important information."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which sources does Guidera use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is the story for some places so short?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because there is little reliable information about them. For little-known places Guidera says less rather than filling the gap with invented details."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Guidera know where I am?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. To create a story, Guidera sends only the coordinates of the place you tapped, never your own location, and there are no user accounts."
+     }
+    }
+   ]
+  }
+ ]
+}</script>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">G</span>
+      <span class="logo-text">Guidera</span>
+    </a>
+    <nav class="nav">
+      <a href="/" data-nav>Home</a>
+<a href="/features.html" data-nav>Features</a>
+<a href="/how-it-works.html" data-nav>How it works</a>
+<a href="/cities.html" data-nav>Cities</a>
+<a href="/faq.html" data-nav>FAQ</a>
+<a href="/blog/" data-nav>Blog</a>
+<a href="/about.html" data-nav>About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171" target="_blank" rel="noopener noreferrer" class="btn-app btn-ink ">
+  <svg viewBox="0 0 384 512" width="28" height="28" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" fill="currentColor"/></svg>
+  <span class="btn-stack"><span class="btn-small">Download on the</span><span class="btn-big">App Store</span></span>
+</a>
+    </div>
+    <button type="button" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="icon-menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class=""><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      <span class="icon-close" style="display:none"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class=""><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <nav>
+      <a href="/" data-nav>Home</a>
+<a href="/features.html" data-nav>Features</a>
+<a href="/how-it-works.html" data-nav>How it works</a>
+<a href="/cities.html" data-nav>Cities</a>
+<a href="/faq.html" data-nav>FAQ</a>
+<a href="/blog/" data-nav>Blog</a>
+<a href="/about.html" data-nav>About</a>
+      <div class="cta-wrap"><a href="https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171" target="_blank" rel="noopener noreferrer" class="btn-app btn-ink w-full">
+  <svg viewBox="0 0 384 512" width="28" height="28" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" fill="currentColor"/></svg>
+  <span class="btn-stack"><span class="btn-small">Download on the</span><span class="btn-big">App Store</span></span>
+</a></div>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero article-hero">
+  <div class="container-md">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/blog/">Blog</a><span aria-hidden="true">›</span><span>How Guidera keeps stories accurate</span></nav>
+    <h1>How we stop an AI tour guide from making up history</h1>
+    <p class="byline">By <a href="/about.html" rel="author">Mehmet Selim Çetin</a>, developer of Guidera · Published <time datetime="2026-10-01">1 October 2026</time> · Last updated <time datetime="2026-10-01">1 October 2026</time> · 6 min read</p>
+  </div>
+</section>
+<article class="article">
+<p class="lead">Guidera, the iPhone tour guide I build, doesn't let an AI narrate from memory. Before it tells a story about a place, it researches that place from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites, and a verifier then removes anything those sources don't support. The rule is "no evidence, no claim", so for little-known places the guide says less instead of making things up.</p>
+
+<nav class="toc" aria-label="Contents"><p>On this page</p>
+<ul><li><a href="#problem">Why do AI chatbots make up history?</a></li><li><a href="#research">How does Guidera research a place?</a></li><li><a href="#pipeline">What happens between research and story?</a></li><li><a href="#example">A real example: Big Ben</a></li><li><a href="#obscure">What about little-known places?</a></li><li><a href="#cache">Why is the story the same for everyone?</a></li><li><a href="#privacy">What data is sent?</a></li><li><a href="#limits">What are the limits?</a></li></ul></nav>
+
+<h2 id="problem">Why do AI chatbots make up history about places?</h2>
+<p>A language model writes the most plausible next sentence, not the most verified one. For a famous landmark there is a lot of written material, so the plausible sentence is often also true. For a small chapel, a side street or a local monument there is very little, but the model can still produce a confident, fluent paragraph about it. The result sounds exactly as convincing as the true stories.</p>
+<p>For a tour guide, that is the worst kind of mistake. You are standing in front of the building and have no easy way to tell which parts are real. That is the problem Guidera's design starts from.</p>
+
+<h2 id="research">How does Guidera research a place before telling its story?</h2>
+<p>When you tap a place, Guidera first looks it up in public sources: Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites. What it finds is collected into a set of short factual claims, and each claim is linked to the sources that support it. The research also records gaps: questions the sources don't answer.</p>
+<p>For Big Ben in London, for example, the research holds nine claims from Wikipedia and Wikivoyage, from the origin of the name to the weight of the Great Bell, and one gap: the sources don't explain how the clock mechanism keeps time. Nearby places come from map data, with their distances.</p>
+
+<h2 id="pipeline">What happens between the research and the story?</h2>
+<figure class="figure">
+<svg viewBox="0 0 760 560" role="img" aria-labelledby="pipe-title pipe-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="pipe-title">How Guidera builds a story</title>
+<desc id="pipe-desc">Five steps: research the place, collect short claims with their sources, narrate in the chosen guide and tone, check the story with a verifier that removes anything the sources don't support, then deliver the checked story, which is cached for later visitors.</desc>
+<rect width="760" height="560" rx="16" fill="#F3EEE4"/>
+<rect x="60" y="20" width="480" height="76" rx="16" fill="#FFFFFF" stroke="#0F4C3A" stroke-width="1.5"/><text x="92" y="52" font-size="15" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">1</text><text x="124" y="52" font-size="18" font-weight="600" fill="#1A1814" font-family="Geist, system-ui, sans-serif">Research the place</text><text x="124" y="76" font-size="14" fill="#5A574F" font-family="Geist, system-ui, sans-serif">Wikipedia, Wikidata, Wikivoyage, OSM, city sites</text>
+<path d="M300 98 v22" stroke="#0F4C3A" stroke-width="2"/><path d="M293 114 l7 8 l7 -8" fill="none" stroke="#0F4C3A" stroke-width="2"/>
+<rect x="60" y="122" width="480" height="76" rx="16" fill="#FFFFFF" stroke="#0F4C3A" stroke-width="1.5"/><text x="92" y="154" font-size="15" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">2</text><text x="124" y="154" font-size="18" font-weight="600" fill="#1A1814" font-family="Geist, system-ui, sans-serif">Collect claims with sources</text><text x="124" y="178" font-size="14" fill="#5A574F" font-family="Geist, system-ui, sans-serif">Short facts, each linked to its sources, plus known gaps</text>
+<path d="M300 200 v22" stroke="#0F4C3A" stroke-width="2"/><path d="M293 216 l7 8 l7 -8" fill="none" stroke="#0F4C3A" stroke-width="2"/>
+<rect x="60" y="224" width="480" height="76" rx="16" fill="#FFFFFF" stroke="#0F4C3A" stroke-width="1.5"/><text x="92" y="256" font-size="15" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">3</text><text x="124" y="256" font-size="18" font-weight="600" fill="#1A1814" font-family="Geist, system-ui, sans-serif">Narrate</text><text x="124" y="280" font-size="14" fill="#5A574F" font-family="Geist, system-ui, sans-serif">In the guide, tone and length you picked</text>
+<path d="M300 302 v22" stroke="#0F4C3A" stroke-width="2"/><path d="M293 318 l7 8 l7 -8" fill="none" stroke="#0F4C3A" stroke-width="2"/>
+<rect x="60" y="326" width="480" height="76" rx="16" fill="#FFFFFF" stroke="#0F4C3A" stroke-width="1.5"/><text x="92" y="358" font-size="15" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">4</text><text x="124" y="358" font-size="18" font-weight="600" fill="#1A1814" font-family="Geist, system-ui, sans-serif">Verify</text><text x="124" y="382" font-size="14" fill="#5A574F" font-family="Geist, system-ui, sans-serif">Every statement is checked against the claims</text>
+<path d="M300 404 v22" stroke="#0F4C3A" stroke-width="2"/><path d="M293 420 l7 8 l7 -8" fill="none" stroke="#0F4C3A" stroke-width="2"/>
+<rect x="60" y="428" width="480" height="76" rx="16" fill="#0F4C3A" stroke="#0F4C3A" stroke-width="1.5"/><text x="92" y="460" font-size="15" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">5</text><text x="124" y="460" font-size="18" font-weight="600" fill="#FAF7F2" font-family="Geist, system-ui, sans-serif">Checked story</text><text x="124" y="484" font-size="14" fill="#D9E4DF" font-family="Geist, system-ui, sans-serif">Shared with later visitors to the same place</text>
+<path d="M540 364 H600 V410" stroke="#C8553D" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+<rect x="560" y="410" width="180" height="64" rx="12" fill="#FFFFFF" stroke="#C8553D" stroke-width="1.5"/>
+<text x="650" y="438" text-anchor="middle" font-size="14" font-weight="600" fill="#C8553D" font-family="Geist, system-ui, sans-serif">Not supported?</text>
+<text x="650" y="458" text-anchor="middle" font-size="13" fill="#5A574F" font-family="Geist, system-ui, sans-serif">Removed from the story</text>
+</svg>
+<figcaption>Guidera's story pipeline, simplified.</figcaption>
+</figure>
+<ol>
+<li><strong>Research.</strong> The place is looked up in the sources above.</li>
+<li><strong>Claims with sources.</strong> The findings become short claims, each tied to its sources, plus a list of gaps.</li>
+<li><strong>Narration.</strong> The story is written in the guide you chose (Arthur the Historian, Max the Local Insider or Luna the Artist), in your tone and length.</li>
+<li><strong>Verification.</strong> A verifier checks the story against the claims and removes anything the sources don't support.</li>
+<li><strong>The checked story.</strong> The result is what you read or hear.</li>
+</ol>
+
+<h2 id="example">What does "no evidence, no claim" look like in a real story?</h2>
+<p>Here are four sentences from a real Guidera story about Big Ben, each with the source behind it. The full story, with every sentence traced, is on <a href="/#trust">the Guidera home page</a>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Sentence in the story</th><th>Based on</th></tr></thead>
+<tbody><tr><td>“The name Big Ben actually belongs only to the Great Bell swinging in the dark of the belfry, not the stone tower itself.”</td><td>Wikipedia, Wikivoyage</td></tr>
+<tr><td>“The tower was officially called the Clock Tower until 2012, when it was renamed the Elizabeth Tower for Queen Elizabeth II&#x27;s Diamond Jubilee.”</td><td>Wikipedia, Wikivoyage</td></tr>
+<tr><td>“Completed in 1859, the structure was designed in the Perpendicular Gothic style by Augustus Pugin and Charles Barry.”</td><td>Wikipedia</td></tr>
+<tr><td>“Across the street, about one hundred and eighty metres to the south-west, lies St. Margaret&#x27;s Church.”</td><td>map data</td></tr></tbody>
+</table></div>
+<p class="source">Sources: <a href="https://en.wikipedia.org/wiki/Big_Ben" target="_blank" rel="noopener">Wikipedia: Big Ben</a>, <a href="https://en.wikivoyage.org/wiki/London/Westminster" target="_blank" rel="noopener">Wikivoyage: London/Westminster</a></p>
+<p>Just as important is what the story leaves out. The sources had no details on how the clock mechanism works, so the story doesn't mention it at all, even though a chatbot could easily have produced a paragraph about it.</p>
+<!-- SELIM: real example (a before/after: what an unchecked AI answer said about a place vs. what Guidera's checked story says) -->
+
+<h2 id="obscure">What does Guidera do with little-known places?</h2>
+<p>It says less. Guidera works on any place Apple Maps knows, including places with only a line or two of public information. When the sources are thin, the story is shorter and sticks to what is supported. A short, true story is the intended result, not a failure.</p>
+
+<h2 id="cache">Why do two people get the same story for the same place?</h2>
+<p>Once a place's story has been researched and checked, it is stored and shared. The next visitor who taps the same place gets the same checked story instantly, instead of a new story being written each time.</p>
+
+<h2 id="privacy">What data does Guidera send when you tap a place?</h2>
+<p>To create a story, Guidera sends only the coordinates of the place you tapped, never your own location. There are no user accounts. The full details are in the <a href="https://msc35.github.io/guidera-legal/privacy">privacy policy</a>.</p>
+
+<h2 id="limits">What are the limits of checking stories against sources?</h2>
+<p>Checking against sources reduces made-up facts, but it can't fix a source that is wrong, thin or inconsistent. A real example: while researching our Munich walking guide, I found that Guidera's research notes and the <a href="https://en.wikipedia.org/wiki/Hofbr%C3%A4uhaus_am_Platzl" target="_blank" rel="noopener">English Wikipedia article on the Hofbräuhaus</a> name different dukes as the founder of the brewery in 1589. On the blog, I only state the year that both agree on.</p>
+<p>Stories can also be brief or incomplete, especially for small places. That is why the app shows this note with each story: "AI-generated content may not be accurate. Always verify important information."</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<div class="faq-list"><details><summary>Does Guidera make things up?<span class="plus">+</span></summary><p>Guidera is built to avoid it: every story is based on researched claims with sources, and a verifier removes anything the sources don't support. Sources themselves can still be wrong or incomplete, so the app asks you to verify important information.</p></details><details><summary>Which sources does Guidera use?<span class="plus">+</span></summary><p>Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites.</p></details><details><summary>Why is the story for some places so short?<span class="plus">+</span></summary><p>Because there is little reliable information about them. For little-known places Guidera says less rather than filling the gap with invented details.</p></details><details><summary>Does Guidera know where I am?<span class="plus">+</span></summary><p>No. To create a story, Guidera sends only the coordinates of the place you tapped, never your own location, and there are no user accounts.</p></details></div>
+<aside class="cta-box" aria-label="About Guidera">
+  <p><strong style="color:var(--cream)">About Guidera.</strong> Guidera is an iPhone AI tour guide that tells source-checked stories about any place on the map, in 9 languages. Free to download; Premium is sold as passes, not a subscription.</p>
+  <a href="https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171" target="_blank" rel="noopener noreferrer" class="btn-app btn-terra ">
+  <svg viewBox="0 0 384 512" width="28" height="28" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" fill="currentColor"/></svg>
+  <span class="btn-stack"><span class="btn-small">Download on the</span><span class="btn-big">App Store</span></span>
+</a>
+</aside>
+</article>
+<section class="related" aria-label="Related posts">
+  <h2>Related posts</h2>
+  <ul><li><a href="/blog/munich-old-town-self-guided-walking-tour.html">Free Self-Guided Walking Tour of Munich&#x27;s Old Town</a><p>11 stops from Marienplatz to the Asamkirche, with a map and sources.</p></li>
+<li><a href="/blog/best-audio-tour-apps-which-one-for-which-trip.html">Audio Tour Apps Compared: Which One Fits Your Trip? (2026)</a><p>Six apps, what each is best for, and their honest limits.</p></li></ul>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">
+          <span class="logo-mark">G</span>
+          <span class="logo-text">Guidera</span>
+        </div>
+        <p class="footer-tagline">Guidera is an iPhone AI tour guide that tells source-checked stories about any place on the map, in 9 languages.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/features.html" class="story-link">Features</a></li>
+          <li><a href="/how-it-works.html" class="story-link">How it works</a></li>
+          <li><a href="/cities.html" class="story-link">Cities</a></li>
+          <li><a href="/faq.html" class="story-link">FAQ</a></li>
+          <li><a href="/blog/" class="story-link">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html" class="story-link">About</a></li>
+          <li><a href="https://msc35.github.io/guidera-legal/privacy" class="story-link">Privacy</a></li>
+          <li><a href="https://msc35.github.io/guidera-legal/terms" class="story-link">Terms</a></li>
+          <li><a href="mailto:mehmetselim692@icloud.com" class="story-link">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Mehmet Selim Çetin · Guidera is not affiliated with Google, OpenAI, or Apple Inc.</p>
+      <p>Made with care in Munich</p>
+    </div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+</body>
+</html>
