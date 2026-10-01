@@ -26,6 +26,6 @@ Guidera is made by Mehmet Selim Çetin, a solo developer in Munich. Facts on thi
 - [About the developer](https://guidera.live/about.html)
 
 ## Blog
-- [Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)](https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html): An 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.
+- [Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)](https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html): A 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.
 - [How We Stop an AI Tour Guide From Making Up History](https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html): Research, claims with sources, narration, verification: how Guidera avoids invented history.
 - [Audio Tour Apps Compared: Which One Fits Your Trip? (2026)](https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html): Six audio tour apps compared by platform, pricing, offline use, languages and honest limits.
