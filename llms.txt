@@ -2,7 +2,7 @@
 
 > Guidera is an iPhone AI tour guide that tells source-checked stories about any place on the map, in 9 languages.
 
-Guidera is made by Mehmet Selim Çetin, a solo developer in Munich. Facts on this site are kept accurate; if anything here conflicts with a page, the page is the source.
+Guidera (App Store name: "Guidera: AI City Guide", website: https://guidera.live) is made by Mehmet Selim Çetin, a solo developer in Munich. Facts on this site are kept accurate; if anything here conflicts with a page, the page is the source.
 
 ## Key facts
 - Before narrating, Guidera researches the place from Wikipedia, Wikidata, Wikivoyage, OpenStreetMap and official city websites. A verifier removes anything the sources don't support. For little-known places the guide says less rather than making things up.
