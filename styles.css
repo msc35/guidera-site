@@ -646,3 +646,20 @@ h1, h2, h3, h4, .display {
 .post-card p.summary { margin-top: 14px; font-size: 17px; color: var(--ink-soft); flex: 1; }
 .post-card .read { margin-top: 24px; font-size: 15px; font-weight: 600; color: var(--forest); }
 .post-meta { font-size: 13px; letter-spacing: 0.04em; color: var(--ink-soft); }
+
+/* Blog: share your story form */
+.story-form { margin-top: 48px; background: white; border-radius: 28px; box-shadow: var(--shadow-soft); padding: 32px; display: flex; flex-direction: column; gap: 16px; font-size: 16px; }
+@media (min-width: 768px) { .story-form { padding: 40px 44px; } }
+.story-form fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.story-form legend, .story-form label[for] { font-weight: 600; margin-bottom: 6px; }
+.story-form .opt { font-weight: 400; color: var(--ink-soft); }
+.story-form .choice { display: flex; gap: 10px; align-items: flex-start; color: var(--ink-soft); }
+.story-form .choice input { margin-top: 4px; accent-color: var(--forest); }
+.story-form textarea, .story-form input[type=text] { width: 100%; font: inherit; color: var(--ink); background: var(--cream); border: 1px solid var(--ink-line); border-radius: 14px; padding: 12px 14px; }
+.story-form textarea:focus, .story-form input[type=text]:focus { outline: 2px solid var(--forest); outline-offset: 1px; }
+.story-row { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .story-row { grid-template-columns: 1fr 1fr; } }
+.story-row > div { display: flex; flex-direction: column; }
+.btn-primary { align-self: flex-start; font: inherit; font-weight: 600; color: var(--cream); background: var(--forest); border: 0; border-radius: 9999px; padding: 14px 28px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
+.story-form .note { font-size: 14px; color: var(--ink-soft); }

@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"/>
-<link rel="stylesheet" href="/styles.css?v=2"/>
+<link rel="stylesheet" href="/styles.css?v=3"/>
 <link rel="alternate" type="application/rss+xml" title="Guidera blog" href="https://guidera.live/blog/feed.xml"/>
 <script type="application/ld+json">{
  "@context": "https://schema.org",
@@ -199,6 +199,52 @@
 </article>
   </div>
 </section>
+<section class="section section-sand" id="share">
+  <div class="container-sm">
+    <div class="section-head">
+      <p class="eyebrow">Share your story</p>
+      <h2 style="margin-top:12px">How do you explore with AI?</h2>
+      <p>Tell me about a walk you did with Guidera, or how you use AI tools when you travel: planning, finding your way, learning about a place. The best stories may be featured on this blog, but only if you say yes below.</p>
+    </div>
+    <form class="story-form" id="story-form" action="mailto:mehmetselim692@icloud.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>What would you like to share?</legend>
+        <label class="choice"><input type="radio" name="topic" value="My Guidera story" checked/> A trip or walk with Guidera</label>
+        <label class="choice"><input type="radio" name="topic" value="How I use AI when I travel"/> How I use AI when I travel</label>
+      </fieldset>
+      <label for="story-text">Your story</label>
+      <textarea id="story-text" name="story" rows="7" required placeholder="Where were you, what did you try, and what happened?"></textarea>
+      <div class="story-row">
+        <div><label for="story-name">Name or initials <span class="opt">(optional)</span></label><input id="story-name" name="name" type="text" autocomplete="given-name"/></div>
+        <div><label for="story-city">City <span class="opt">(optional)</span></label><input id="story-city" name="city" type="text"/></div>
+      </div>
+      <label class="choice"><input type="checkbox" name="permission" value="yes" id="story-ok"/> You may quote my story on the Guidera blog, with my name or initials as written above.</label>
+      <button type="submit" class="btn-primary">Send my story</button>
+      <p class="note">Sending opens your own email app with your story filled in, addressed to mehmetselim692@icloud.com. Nothing is stored on this website. <span id="story-status" role="status"></span></p>
+    </form>
+  </div>
+</section>
+<script>
+(function () {
+  var f = document.getElementById('story-form');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var topic = (f.querySelector('input[name=topic]:checked') || {}).value || 'Story';
+    var name = f.name.value.trim(), city = f.city.value.trim(), story = f.story.value.trim();
+    if (!story) { f.story.focus(); return; }
+    var body = story + '
+
+---
+Name: ' + (name || '(not given)') + '
+City: ' + (city || '(not given)') +
+      '
+May be quoted on the blog: ' + (f.permission.checked ? 'yes' : 'no');
+    location.href = 'mailto:mehmetselim692@icloud.com?subject=' + encodeURIComponent('Guidera blog story: ' + topic) + '&body=' + encodeURIComponent(body);
+    document.getElementById('story-status').textContent = 'Your email app should open now. If it does not, write to the address above.';
+  });
+})();
+</script>
 </main>
 <footer class="footer">
   <div class="footer-inner">
@@ -236,6 +282,6 @@
     </div>
   </div>
 </footer>
-<script src="/main.js?v=2" defer></script>
+<script src="/main.js?v=3" defer></script>
 </body>
 </html>

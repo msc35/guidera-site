@@ -25,6 +25,14 @@ Guidera (App Store name: "Guidera: AI City Guide", website: https://guidera.live
 - [FAQ](https://guidera.live/faq.html)
 - [About the developer](https://guidera.live/about.html)
 
+## Self-guided walking tours (free, with sources)
+- [Free Paris Walking Tour: Notre-Dame to the Eiffel Tower](https://guidera.live/tours/paris-historic-core-louvre-walking-tour.html): 9.9 km, 14 stops
+- [Free Westminster Walking Tour, London (14 Stops)](https://guidera.live/tours/london-westminster-walking-tour.html): 6.4 km, 14 stops
+- [Free London Thames Walking Tour: Tower to London Eye](https://guidera.live/tours/london-bankside-thames-walking-tour.html): 7.7 km, 15 stops
+- [Free Self-Guided Walking Tour of Ancient Rome (14 Stops)](https://guidera.live/tours/rome-ancient-empire-walking-tour.html): 6.3 km, 14 stops
+- [Free Istanbul Walking Tour: Sultanahmet to Galata](https://guidera.live/tours/istanbul-sultanahmet-walking-tour.html): 6.8 km, 14 stops
+- [Free Gothic Quarter Walking Tour, Barcelona (15 Stops)](https://guidera.live/tours/barcelona-gothic-quarter-walking-tour.html): 5.2 km, 15 stops
+
 ## Blog
 - [Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)](https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html): A 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.
 - [How We Stop an AI Tour Guide From Making Up History](https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html): Research, claims with sources, narration, verification: how Guidera avoids invented history.
