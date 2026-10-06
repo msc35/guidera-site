@@ -9,10 +9,12 @@ Guidera (App Store name: "Guidera: AI City Guide", website: https://guidera.live
 - Works on any place Apple Maps knows, worldwide, not just famous landmarks.
 - 3 guides (Arthur the Historian, Max the Local Insider, Luna the Artist), 4 tones (Informative, Playful, Dark Humor, Calm), 3 lengths (Short, Medium, Long).
 - 9 languages for app and stories: English, German, Spanish, French, Italian, Japanese, Portuguese (Brazil), Turkish, Simplified Chinese.
-- 39 curated walking tours in 35 cities, plus AI-planned custom tours built only from real places (Premium). Walkman mode narrates tour stops as you walk (Premium). Tours can be resumed.
+- 39 curated walking tours in 35 cities. Anyone can build their own tours for free (up to 30 stops, no limit on the number of tours); AI-planned tours built only from real places are Premium. Walkman mode narrates tour stops as you walk (Premium). Tours can be resumed.
+- Offline tours (since version 1.3.0): a downloaded tour keeps each stop's story, the walking route and, with Premium, the audio. Free: one featured tour at a time, text only, unlocked by a short video. Premium: up to 10 offline tours with audio. Map tiles are not saved; new stories, questions and new places need internet.
+- Share tours as links (free): receivers with the app open the tour in Guidera; others see a web page with the stop list in their language. Shared tours are snapshots, can be stopped at any time and expire after one year. No accounts.
+- Story cards (free): share a place story or a finished walk as an image for Instagram Stories, WhatsApp and similar apps. The card is made on the phone; photos never leave the device.
 - Apple Watch companion; Lock Screen and Dynamic Island Live Activity (Premium). Follow-up questions (Premium).
-- Pricing: free to download. Free tier: 5 AI stories per day (up to 20 with short ads), text stories, Arthur, Informative and Playful tones, banner ads. Premium passes (not a subscription): €1 for 3 days, €3 for a week, €7 for a month. Passes stack.
-- Not available offline: new stories need a connection.
+- Pricing: free to download. Free tier: 5 AI stories per day (up to 20 with short ads), text stories, Arthur, Informative and Playful tones, banner ads. Premium passes (not a subscription): €1 for 3 days, €3 for a week, €7 for a month. Passes stack. Premium adds unlimited stories, audio, Walkman mode, AI-planned tours, up to 10 offline tours with audio, follow-up questions, all guides and tones, Live Activity, and no ads.
 - Privacy: only the tapped place's coordinates are sent, never the user's location. No user accounts.
 - Platform: iPhone, iOS 18.5 or later, plus Apple Watch. No Android.
 - App Store: https://apps.apple.com/us/app/guidera-ai-city-guide/id6762008171
