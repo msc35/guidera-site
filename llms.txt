@@ -36,6 +36,7 @@ Guidera (App Store name: "Guidera: AI City Guide", website: https://guidera.live
 - [Free Gothic Quarter Walking Tour, Barcelona (15 Stops)](https://guidera.live/tours/barcelona-gothic-quarter-walking-tour.html): 5.2 km, 15 stops
 
 ## Blog
+- [Screen-Free Exploration: How Self-Guided Tours Reclaim Urban Walking](https://guidera.live/blog/screen-free-exploration-how-self-guided-tours-reclaim-urban-walking.html): Why screen-guided walks are tiring, how hands-free audio tours help, and 4 steps for a screen-free walking routine.
 - [Free Self-Guided Walking Tour of Munich's Old Town (Map, 11 Stops & Tips)](https://guidera.live/blog/munich-old-town-self-guided-walking-tour.html): A 3.5 km, 11-stop route from Marienplatz to the Asamkirche, with a map, sources and practical tips.
 - [How We Stop an AI Tour Guide From Making Up History](https://guidera.live/blog/how-guidera-keeps-ai-tour-guide-accurate.html): Research, claims with sources, narration, verification: how Guidera avoids invented history.
 - [Audio Tour Apps Compared: Which One Fits Your Trip? (2026)](https://guidera.live/blog/best-audio-tour-apps-which-one-for-which-trip.html): Six audio tour apps compared by platform, pricing, offline use, languages and honest limits.
